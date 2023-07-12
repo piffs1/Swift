@@ -90,3 +90,4 @@ print(type(of:slice)) // ArraySlice<Int>
 // Преобразование ArraySlice в Array
 let arrayFromSlice = Array(slice)
 print(type(of: arrayFromSlice)) // Array<Int>
+
