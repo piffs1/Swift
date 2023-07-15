@@ -15,3 +15,4 @@ func reverseSeq(n: Int) -> [Int] {
 }
   return arrResult
 }
+
