@@ -22,3 +22,6 @@ func squareRoot2(_ input: Int) -> Int {
 }
 
 print(squareRoot2(143))
+
+let x = 4.0
+let y = x.squareRoot() // 2.0
