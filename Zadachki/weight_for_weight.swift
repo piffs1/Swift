@@ -68,9 +68,10 @@ func orderWeight1(_ s: String) -> String {
   }.joined(separator: " ")
 }
 
+
 // Мои фиксы ЧИСТО ДЛЯ МЕНЯ! ЧТОБЫ БЫЛО ПОНИМАЕНИЕ! lhs = $0 - String. А ПОТОМ УЖЕ РАБОТАЕМ с $0 Character!!!
 // compactMap в этом случае необходим для того, чтобы не возиться с оцпионалами.
-// метод map вернет optional(int)
+// метод map вернет optional(int) 
 func orderWeight2(_ s: String) -> String {
   return s.components(separatedBy: " ").sorted { (first: String, second: String) -> Bool in
     let lhs = first.compactMap{ Int(String($0)) }.reduce(0, +) 
